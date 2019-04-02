@@ -18,17 +18,19 @@
     $.getJSON("https://ipapi.co/json/", function(data) {
       ip = data.ip;
     });
-    
+
     this.find(settings.submit).click(function() {
       var unindexedArray = form.serializeArray();
       var hsFields = {
         fields: [],
+
         context: {
           hutk: $.cookie("hubspotutk"),
           pageUri: window.location.href,
           pageName: $(document)
             .find("title")
-            .text()
+            .text(),
+          ipAddress: ip
         }
       };
       var indexedArray = {
