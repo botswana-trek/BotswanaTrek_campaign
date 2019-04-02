@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+  </head>
+  <body>
+    <div id="form_container">
+      <form id="form-signup" class="appnitro" method="post">
+        <ul>
+          <li>
+            <label class="description" for="firstname">First Name* </label>
+            <div>
+              <input
+                id="firstname"
+                name="firstname"
+                type="text"
+                value=""
+                required
+              />
+            </div>
+          </li>
+          <li>
+            <label class="description" for="lastname">Last Name* </label>
+            <div>
+              <input
+                id="lastname"
+                name="lastname"
+                type="text"
+                value=""
+                required
+              />
+            </div>
+          </li>
+          <li>
+            <label class="description" for="email">Email </label>
+            <div>
+              <input id="email" name="email" type="text" value="" required />
+            </div>
+          </li>
+          <li class="buttons">
+            <input class="submit" type="button" name="submit" value="Sign Up" />
+          </li>
+        </ul>
+      </form>
+      <div class="success-message" style="display: none;">
+        Thank you! for your interest. A representative will get in touch with
+        you soon.
+      </div>
+    </div>
+    <script
+      src="//code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins/hsform.js"></script>
+    <script>
+      jq331 = jQuery.noConflict(true);
+    </script>
+    <script>
+      (function($) {
+        $(function() {
+          $("#form-signup").hubspotForm({
+            validationRules: {
+              rules: {
+                firstname: "required",
+                lastname: "required",
+                email: {
+                  required: true,
+                  email: true
+                }
+              },
+              messages: {
+                firstname: "First name is required.",
+                lastname: "Last name is required.",
+                email: {
+                  required: "Email address is required",
+                  email:
+                    "Your email address must be in the format of name@domain.com"
+                }
+              }
+            }
+          });
+        });
+      })(jq331);
+    </script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/5341801.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
+</html>
