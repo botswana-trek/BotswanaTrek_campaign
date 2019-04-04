@@ -20,6 +20,7 @@
     });
 
     this.find(settings.submit).click(function() {
+      console.log(form.serializeArray());
       var unindexedArray = form.serializeArray();
       var hsFields = {
         fields: [],
@@ -41,12 +42,16 @@
           if (
             n["name"] === "firstname" ||
             n["name"] === "lastname" ||
-            n["name"] === "email"
+            n["name"] === "email" ||
+            n["name"] === "ask_question"
           ) {
             var hsField = { name: n["name"], value: n["value"] };
             hsFields.fields.push(hsField);
           }
         });
+
+        var hsField = { name: "ask_question", value: $("#ask_question").val() };
+        hsFields.fields.push(hsField);
 
         var messageBox = form.siblings(settings.successMessage);
         $.ajax({
