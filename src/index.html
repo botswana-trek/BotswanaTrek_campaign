@@ -425,8 +425,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/plugins/owl.carousel.min.js"></script>
 
-    <!-- Start of HubSpot Embed Code -->
     <script>
+      /*
       (function() {
         var isMobile = false; //initiate as false
         // device detection
@@ -441,24 +441,26 @@
           isMobile = true;
         }
 
-        //if (!isMobile) {
-        var hsScript = document.createElement("script");
-        hsScript.id = "hs-script-loader";
-        hsScript.type = "text/javascript";
-        hsScript.src = "//js.hs-scripts.com/5341801.js";
+        if (!isMobile) {
+          var hsScript = document.createElement("script");
+          hsScript.id = "hs-script-loader";
+          hsScript.type = "text/javascript";
+          hsScript.src = "//js.hs-scripts.com/5341801.js";
 
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(hsScript);
-        //}
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(hsScript);
+        }
       })();
+      */
     </script>
-    <!--<script
+    <!-- Start of HubSpot Embed Code -->
+    <script
       type="text/javascript"
       id="hs-script-loader"
       async
       defer
       src="//js.hs-scripts.com/5341801.js"
-    ></script>-->
+    ></script>
     <!-- End of HubSpot Embed Code -->
   </body>
 </html>
