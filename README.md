@@ -1,5 +1,5 @@
-#Botswana Trek Landing Page Suite
-This applicatio uses jQuery, SASS and yarn for developing landing pages for Botswanatrek. 
+# Botswana Trek Landing Page Suite
+This application uses jQuery, SASS and yarn for developing landing pages for Botswanatrek. 
 
 ## Prerequisites
 npm install -g npm-run-all
