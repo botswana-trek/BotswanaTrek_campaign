@@ -136,34 +136,29 @@ body {
 }
 
 .banner-section #form_container ul li:nth-child(1) {
-  max-width: 17%;
+  max-width: 25%;
   width: 100%;
   padding: 0 5px;
 }
 
 .banner-section #form_container ul li:nth-child(2) {
-  max-width: 17%;
+  max-width: 25%;
   width: 100%;
   padding: 0 5px;
 }
 
 .banner-section #form_container ul li:nth-child(3) {
-  max-width: 20%;
+  max-width: 25%;
   width: 100%;
   padding: 0 5px;
 }
 
 .banner-section #form_container ul li:nth-child(4) {
-  max-width: 30%;
+  max-width: 25%;
   width: 100%;
   padding: 0 5px;
 }
 
-.banner-section #form_container ul li:nth-child(5) {
-  max-width: 16%;
-  width: 100%;
-  padding: 0 5px;
-}
 
 .banner-section #form_container ul li label {
   color: #ffffff;
@@ -234,6 +229,7 @@ body {
   color: green;
   border-radius: 4px;
   padding: 10px;
+  margin-bottom: 5px;
 }
 
 .banner-section #form_container div.error {
@@ -241,6 +237,7 @@ body {
   color: #721c24;
   border-radius: 4px;
   padding: 10px;
+  margin-bottom: 5px;
 }
 
 .section-container-gallery {
@@ -548,7 +545,7 @@ body {
     padding: 0;
     height: auto;
     margin: 0px auto;
-    max-width: 500px;
+    max-width: 100%;
     width: 100%;
   }
 
@@ -556,7 +553,7 @@ body {
   .banner-section #form_container ul li:nth-child(2),
   .banner-section #form_container ul li:nth-child(3),
   .banner-section #form_container ul li:nth-child(4) {
-    max-width: 50%;
+    max-width: 25%;
     width: 100%;
     padding: 0 5px;
     margin-bottom: 15px;
@@ -571,10 +568,7 @@ body {
     text-align: center;
   }
 
-  .banner-section #form_container ul li.buttons input {
-    margin-top: 0;
-  }
-
+  
   .carousal-list img.left {
     position: absolute !important;
     left: 50px !important;
@@ -623,7 +617,7 @@ body {
     padding: 0;
     height: auto;
     margin: 0px auto;
-    max-width: 500px;
+    max-width: 100%;
     width: 100%;
   }
 
@@ -631,7 +625,7 @@ body {
   .banner-section #form_container ul li:nth-child(2),
   .banner-section #form_container ul li:nth-child(3),
   .banner-section #form_container ul li:nth-child(4) {
-    max-width: 50%;
+    max-width: 25%;
     width: 100%;
     padding: 0 5px;
     margin-bottom: 15px;
@@ -644,10 +638,6 @@ body {
     margin: 0 auto;
     float: none;
     text-align: center;
-  }
-
-  .banner-section #form_container ul li.buttons input {
-    margin-top: 0;
   }
 
   .how-it-works .col-md-4 {

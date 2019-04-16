@@ -42,16 +42,13 @@
           if (
             n["name"] === "firstname" ||
             n["name"] === "lastname" ||
-            n["name"] === "email" ||
-            n["name"] === "ask_question"
+            n["name"] === "email"
           ) {
             var hsField = { name: n["name"], value: n["value"] };
             hsFields.fields.push(hsField);
           }
         });
 
-        var hsField = { name: "ask_question", value: $("#ask_question").val() };
-        hsFields.fields.push(hsField);
 
         var messageBox = form.siblings(settings.successMessage);
         $.ajax({
